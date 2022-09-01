@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmpgAPI", "cmpgAPI\cmpgAPI.csproj", "{46C29C91-96CD-4222-974C-8EC2BDD12F6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{46C29C91-96CD-4222-974C-8EC2BDD12F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46C29C91-96CD-4222-974C-8EC2BDD12F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46C29C91-96CD-4222-974C-8EC2BDD12F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46C29C91-96CD-4222-974C-8EC2BDD12F6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24846FDF-E6DB-40A5-ACDA-FEF6EB91CB3A}
+	EndGlobalSection
+EndGlobal
