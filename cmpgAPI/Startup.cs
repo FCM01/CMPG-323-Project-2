@@ -27,7 +27,7 @@ namespace cmpgAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<ProductsDBContext>(options => options.UseSqlServer("nmae=ConnectiionString:DefaultConnection"));
+            //services.AddDbContext<ProductsDBContext>(options => options.UseSqlServer("nmae=ConnectiionString:DefaultConnection"));
             services.AddSwaggerGen(options => { options.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "CMPG323 API", Version = "v2", Description = "Project 2 API" }); }) ;
         }
 
