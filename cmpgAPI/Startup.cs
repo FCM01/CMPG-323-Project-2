@@ -27,6 +27,8 @@ namespace cmpgAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<ProductsDBContext>(options => options.UseSqlServer("nmae=ConnectiionString:DefaultConnection"));
+            services.AddSwaggerGen(options => { options.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "CMPG323 API", Version = "v2", Description = "Project 2 API" }); }) ;
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,6 +49,7 @@ namespace cmpgAPI
             {
                 endpoints.MapControllers();
             });
-        }
+            app.UseSwagger(); app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v2/swagger.json", "CMPG 323 API"));
+        }   
     }
 }
