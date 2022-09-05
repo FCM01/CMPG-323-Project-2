@@ -1,3 +1,4 @@
+using cmpgAPI.models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,7 +28,7 @@ namespace cmpgAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            //services.AddDbContext<ProductsDBContext>(options => options.UseSqlServer("nmae=ConnectiionString:DefaultConnection"));
+            services.AddDbContext<ConnectedOfficeContext>(options => options.UseSqlServer("name=ConnectionStrings:DefaultConnection"));
             services.AddSwaggerGen(options => { options.SwaggerDoc("v2", new Microsoft.OpenApi.Models.OpenApiInfo { Title = "CMPG323 API", Version = "v2", Description = "Project 2 API" }); }) ;
         }
 
