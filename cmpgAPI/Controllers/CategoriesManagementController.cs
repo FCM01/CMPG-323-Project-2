@@ -13,7 +13,7 @@ namespace cmpgAPI.Controllers
     
 {
     [Authorize]
-    [Authorize (Roles = UserRoles.Admin)]
+    //[Authorize (Roles = UserRoles.Admin)]
 
     [Route("api/[controller]")]
     [ApiController]

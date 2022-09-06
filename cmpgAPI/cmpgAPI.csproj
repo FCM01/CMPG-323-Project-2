@@ -6,6 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20220906073111_Initial.cs" />
+    <Compile Remove="Migrations\20220906073111_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20220906131015_MyMigration.cs" />
+    <Compile Remove="Migrations\20220906131015_MyMigration.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.28" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.28" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.28" />
