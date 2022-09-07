@@ -121,6 +121,11 @@ namespace cmpgAPI.Controllers
             return category;
         }
 
+        private ActionResult<Category> OkResult()
+        {
+            throw new NotImplementedException();
+        }
+
         private bool CategoryExists(Guid id)
         {
             return _context.Category.Any(e => e.CategoryId == id);

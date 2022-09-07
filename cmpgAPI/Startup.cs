@@ -33,6 +33,7 @@ namespace JWTAuthentication
             services.AddDbContext<ConnectedOfficeContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
 
+
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v2", new OpenApiInfo
                 {
@@ -98,6 +99,7 @@ namespace JWTAuthentication
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseDeveloperExceptionPage();
 
             app.UseRouting();
 
@@ -108,6 +110,7 @@ namespace JWTAuthentication
             {
                 endpoints.MapControllers();
             });
+
             app.UseSwagger(); app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v2/swagger.json", "CMPG 323 API"));
         }
     }
