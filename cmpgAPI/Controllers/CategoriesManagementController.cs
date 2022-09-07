@@ -13,8 +13,6 @@ namespace cmpgAPI.Controllers
     
 {
     [Authorize]
-    //[Authorize (Roles = UserRoles.Admin)]
-
     [Route("api/[controller]")]
     [ApiController]
     public class CategoriesManagementController : ControllerBase
@@ -107,6 +105,7 @@ namespace cmpgAPI.Controllers
 
         // DELETE: api/CategoriesManagement/5
         [HttpDelete("{id}")]
+        [Authorize(Roles = UserRoles.Admin)]
         public async Task<ActionResult<Category>> DeleteCategory(Guid id)
         {
             var category = await _context.Category.FindAsync(id);
