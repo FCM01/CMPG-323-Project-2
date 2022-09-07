@@ -15,6 +15,7 @@ namespace cmpgAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
 
     public class ValuesController : ControllerBase
     {

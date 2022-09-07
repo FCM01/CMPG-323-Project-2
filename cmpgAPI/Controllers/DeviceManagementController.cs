@@ -104,6 +104,23 @@ namespace cmpgAPI.Controllers
             return CreatedAtAction("GetDevice", new { id = device.DeviceId }, device);
         }
 
+        // DELETE: api/DeviceManagement/5
+        [HttpDelete("{id}")]
+        [Authorize(Roles = UserRoles.Admin)]
+        public async Task<ActionResult<Device>> DeleteCategory(Guid id)
+        {
+            var device = await _context.Device.FindAsync(id);
+            if (device == null)
+            {
+                return NotFound();
+            }
+
+            _context.Device.Remove(device);
+            await _context.SaveChangesAsync();
+
+            return device;
+        }
+
         private bool DeviceExists(Guid id)
         {
             return _context.Device.Any(e => e.DeviceId == id);

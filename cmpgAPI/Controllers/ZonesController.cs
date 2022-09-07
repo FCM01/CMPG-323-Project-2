@@ -12,7 +12,6 @@ using JWTAuthentication.Authentication;
 namespace cmpgAPI.Controllers
 {
     [Authorize]
-    //[Authorize(Roles = UserRoles.Admin)]
     [Route("api/[controller]")]
     [ApiController]
     public class ZonesController : ControllerBase
@@ -106,6 +105,7 @@ namespace cmpgAPI.Controllers
 
         // DELETE: api/Zones/5
         [HttpDelete("{id}")]
+        [Authorize(Roles = UserRoles.Admin)]
         public async Task<ActionResult<Zone>> DeleteZone(Guid id)
         {
             var zone = await _context.Zone.FindAsync(id);
