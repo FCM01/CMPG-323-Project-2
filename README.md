@@ -1,8 +1,8 @@
 # cmpgAPI
 # IMPORTANT FOR TESTING PLEASE READ THE FOLOWING
-<h1>PLESE NOTE ALL DELETE METHODS REQUIRE ADMIN JWT /ACCESS TO BE USED </h1>
-<h1>PLEASE NOTE THAT ALL ENDPOINTS EXCULDING THE Authenticate ENDPOINTS REQUIRE AUTHARIZATION TO BE USED PLEASE LOGIN FIRST BEFORE ANY TESTING CAN OCCUR </h1>
-<h1>PLESE LOOK AT THE VALUES ENDPOINTS AS THEY CONTAIN THE ADDITIONAL METHODS THAT WERE ASKED FOR</h1>
+<h3>PLESE NOTE ALL DELETE METHODS REQUIRE ADMIN JWT /ACCESS TO BE USED </h3>
+<h3>PLEASE NOTE THAT ALL ENDPOINTS EXCULDING THE Authenticate ENDPOINTS REQUIRE AUTHARIZATION TO BE USED PLEASE LOGIN FIRST BEFORE ANY TESTING CAN OCCUR </h3>
+<h3>PLESE LOOK AT THE VALUES ENDPOINTS AS THEY CONTAIN THE ADDITIONAL METHODS THAT WERE ASKED FOR</h3>
 
 # User Manual 
 <p>Is a Restful API used to mansage Iot devices that utilizes CRUD methods </p>
@@ -13,36 +13,36 @@
 <p>You can use the API manger on the Azure </p>
 
 
-<h1>Endpoints</h1>
+# Endpoints
 <h2>Authenticate</h2>
 <br>
-<p>The endpoints are used for the creation of users and admin users ,and the login of those respective users this login interaction wil provide a JWT that will allow a user to interact with the rest of the application</p>
+<p>The endpoints are used for the creation of users and admin users and the login of those respective users. This login interaction will provide a JWT that will allow a user to interact with the rest of the application.</p>
 <img src = "resources/Screenshot 2022-09-08 145233.png"></img>
-<p>Use of the Authenticate-Login endpoint will give the user the following JWT which can be used to auththentcate them on this API and use it</p>
+<p>Use of the Authenticate-Login endpoint will give the user the following JWT, which can be used to authenticate them on this API and use it.</p>
 <img src = "Screenshot 2022-09-08 150817.png"></img>
 <p>PLESE NOTE ALL DELETE METHODS REQUIRE ADMIN JWT /ACCESS TO BE USED </p>
 <p>PLEASE NOTE THAT ALL ENDPOINTS EXCULDING THE Authenticate ENDPOINTS REQUIRE AUTHARIZATION TO BE USED PLEASE LOGIN FIRST BEFORE ANY TESTING CAN OCCUR </p>
 <h2>CategoriesManagement</h2>
 <br>
-<p>The end points that are here are used to implement CRUD metods with the Category table in the SQL Database</p>
+<p>The end points that are here are used to implement CRUD methods with the Category table in the SQL Database.</p>
 <img src = "resources/Screenshot 2022-09-08 145522.png"></img>
 <p>PLESE NOTE ALL DELETE METHODS REQUIRE ADMIN JWT /ACCESS TO BE USED </p>
 <p>PLEASE NOTE THAT ALL ENDPOINTS EXCULDING THE Authenticate ENDPOINTS REQUIRE AUTHARIZATION TO BE USED PLEASE LOGIN FIRST BEFORE ANY TESTING CAN OCCUR </p>
 <h2>DeviceManagement</h2>
 <br>
-<p>The end points that are here are used to implement CRUD metods with the Device table in the SQL Database</p>
+<p>The end points that are here are used to implement CRUD methods with the Device table in the SQL Database.</p>
 <img src = "resources/Screenshot 2022-09-08 145608.png"></img>
 <p>PLESE NOTE ALL DELETE METHODS REQUIRE ADMIN JWT /ACCESS TO BE USED </p>
 <p>PLEASE NOTE THAT ALL ENDPOINTS EXCULDING THE Authenticate ENDPOINTS REQUIRE AUTHARIZATION TO BE USED PLEASE LOGIN FIRST BEFORE ANY TESTING CAN OCCUR </p>
 <h2>Zones</h2>
 <br>
-<p>The end points that are here are used to implement CRUD metods with the Device table in the SQL Database</p>
+<p>The end points that are here are used to implement CRUD methods with the Zones table in the SQL Database.</p>
 <img src = "resources/Screenshot 2022-09-08 145649.png"></img>
 <p>PLESE NOTE ALL DELETE METHODS REQUIRE ADMIN JWT /ACCESS TO BE USED </p>
 <p>PLEASE NOTE THAT ALL ENDPOINTS EXCULDING THE Authenticate ENDPOINTS REQUIRE AUTHARIZATION TO BE USED PLEASE LOGIN FIRST BEFORE ANY TESTING CAN OCCUR </p>
 <h2>Values</h2>
 <br>
-<p>The endpoint located here are mainly used for the special GET methods that were asked for in the project description</p>
+<p>The endpoints located here are mainly used for the special GET methods that were asked for in the project description. I made this controller (Value Controller)because I was unable to edit the Category and ZOne Controllers to add the required GET methods, so I made my own, which in turn fixed the issue I was experiencing.</p>
 <img src = "resources/Screenshot 2022-09-08 145734.png"></img>
 
 <p>The methods that are spoken off are:</p>
