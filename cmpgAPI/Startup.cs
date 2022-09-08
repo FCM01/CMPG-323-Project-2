@@ -95,10 +95,9 @@ namespace JWTAuthentication
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.  
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
+          
+            app.UseSwagger();
+            app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v2/swagger.json", "CMPG 323 API"));
             app.UseDeveloperExceptionPage();
 
             app.UseRouting();
@@ -111,7 +110,7 @@ namespace JWTAuthentication
                 endpoints.MapControllers();
             });
 
-            app.UseSwagger(); app.UseSwaggerUI(options => options.SwaggerEndpoint("/swagger/v2/swagger.json", "CMPG 323 API"));
+           
         }
     }
 }
