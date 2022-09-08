@@ -363,3 +363,4 @@ MigrationBackup/
 FodyWeavers.xsd
 cmpgAPI/appsettings.json
 cmpgAPI/appsettings.Development.json
+cmpgAPI.sln
