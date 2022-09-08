@@ -53,7 +53,6 @@
 <li>Create a GET method that retrieves all devices within a specific zone (based on the zone ID that is parsed through)</li>
 <img src = "resources/Screenshot 2022-09-08 151314.png"></img>
 <li>Add a private method in the API that checks if a Device exists (based on the ID parsed through) before editing or deleting an item</li>
-Screenshot 2022-09-08 151810.png
 <img src = "resources/Screenshot 2022-09-08 151810.png"></img>
 </ul>
 
