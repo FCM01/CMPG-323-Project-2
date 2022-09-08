@@ -41,7 +41,7 @@
 <h2>Values</h2>
 <br>
 <p>The endpoint located here are mainly used for the special GET methods that were asked for in the project description</p>
-<p>THE methods that are spoken off are:</p>
+<p>The methods that are spoken off are:</p>
 <ul>
 <li>Create a GET method that will return the number of zones that are associated to a specific category (use the device entity to join the data)</li>
 <li>Create a GET method that retrieves all devices within a specific zone (based on the zone ID that is parsed through)</li>
@@ -55,15 +55,3 @@
 
 
 
-
-
-<p>PLEASE NOTE THAT ALL ENDPOINTS EXCULDING THE Authenticate ENDPOINTS REQUIRE AUTHARIZATION TO BE USED PLEASE LOGIN FIRST BEFORE ANY TESTING CAN OCCUR </p>
-
-
-
-<p></p>
-<p></p>
-<p></p>
-<p></p>
-
-<h3>
