@@ -18,6 +18,8 @@
 <br>
 <p>The endpoints are used for the creation of users and admin users ,and the login of those respective users this login interaction wil provide a JWT that will allow a user to interact with the rest of the application</p>
 <img src = "resources/Screenshot 2022-09-08 145233.png"></img>
+<p>Use of the Authenticate-Login endpoint will give the user the following JWT which can be used to auththentcate them on this API and use it</p>
+<img src = "Screenshot 2022-09-08 150817.png"></img>
 <p>PLESE NOTE ALL DELETE METHODS REQUIRE ADMIN JWT /ACCESS TO BE USED </p>
 <p>PLEASE NOTE THAT ALL ENDPOINTS EXCULDING THE Authenticate ENDPOINTS REQUIRE AUTHARIZATION TO BE USED PLEASE LOGIN FIRST BEFORE ANY TESTING CAN OCCUR </p>
 <h2>CategoriesManagement</h2>
@@ -41,13 +43,21 @@
 <h2>Values</h2>
 <br>
 <p>The endpoint located here are mainly used for the special GET methods that were asked for in the project description</p>
+<img src = "resources/Screenshot 2022-09-08 145734.png"></img>
+
 <p>The methods that are spoken off are:</p>
 <ul>
 <li>Create a GET method that will return the number of zones that are associated to a specific category (use the device entity to join the data)</li>
+<img src = "resources/Screenshot 2022-09-08 151503.png"></img>
+
 <li>Create a GET method that retrieves all devices within a specific zone (based on the zone ID that is parsed through)</li>
+<img src = "resources/Screenshot 2022-09-08 151314.png"></img>
 <li>Add a private method in the API that checks if a Device exists (based on the ID parsed through) before editing or deleting an item</li>
+Screenshot 2022-09-08 151810.png
+<img src = "resources/Screenshot 2022-09-08 151810.png"></img>
 </ul>
-<img src = "resources/Screenshot 2022-09-08 145734.png"></img>
+
+
 <p>PLESE NOTE ALL DELETE METHODS REQUIRE ADMIN JWT /ACCESS TO BE USED </p>
 <p>PLEASE NOTE THAT ALL ENDPOINTS EXCULDING THE Authenticate ENDPOINTS REQUIRE AUTHARIZATION TO BE USED PLEASE LOGIN FIRST BEFORE ANY TESTING CAN OCCUR </p>
 
