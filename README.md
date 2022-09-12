@@ -55,8 +55,10 @@
 <li>Add a private method in the API that checks if a Device exists (based on the ID parsed through) before editing or deleting an item</li>
 <img src = "resources/Screenshot 2022-09-08 151810.png"></img>
 </ul>
-
-
+<h1>API MANAGER SCREENSHOTS</h1>
+<p>Endpoints are below:</p>
+<img src = "resources/Screenshot 1.png"></img>
+<img src = "resources/Screenshot 2.png"></img>
 <p>PLESE NOTE ALL DELETE METHODS REQUIRE ADMIN JWT /ACCESS TO BE USED </p>
 <p>PLEASE NOTE THAT ALL ENDPOINTS EXCULDING THE Authenticate ENDPOINTS REQUIRE AUTHARIZATION TO BE USED PLEASE LOGIN FIRST BEFORE ANY TESTING CAN OCCUR </p>
 
